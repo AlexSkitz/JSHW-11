@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    line-height: 1.15;
 }
 
 *,
@@ -8,12 +9,20 @@ html{
     box-sizing: inherit;
 }
 body{
+    margin: 0;
     font-size: 14px;
     line-height: 1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
 .wrapper{
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0;
 }
 ul{
     list-style: none;
@@ -23,6 +32,42 @@ a{
 }
 .container{
     max-width: 1400px;
+    min-width: 600px;
     margin: 0 auto;
     padding: 0px 15px;
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.cart-inputs .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    margin: 5px;
+}
+button{
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+.goods{
+    margin: 20px auto;
+}
+td,th,tr{
+    border: 1px solid black;
+}
+td{
+    max-width: 20px;
+}
+#goods-table{
+    width: 100%;
+    padding: 30px;
+}
+#table{
+    width: 100%;
 }

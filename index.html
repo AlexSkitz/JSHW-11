@@ -10,13 +10,40 @@
 </head>
 
 <body>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="cart" id="cart">
+
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="cart-inputs">
+                <div class="container">
+                    <div class="first-input">
+                        <label for="name-input">Type a product:</label>
+                        <input type="text" id="name-input">
+                    </div>
+                    <div class="second-input">
+                        <label for="number-input">Set amount:</label>
+                        <input type="text" id="number-input">
+                    </div>
+                    <div class="buttons">
+                        <button id="add-button">Add</button>
+                        <button id="del-button">Remove</button>
+                    </div>
+                </div>
+            </section>
+            <section class="goods" id="goods">
+                <div class="container">
+                    <div id="goods-table"></div>
+                </div>
+            </section>
+        </main>
     </div>
-    
 
-
-    
-   
 </body>
 <script src="script.js"></script>
+
 </html>
