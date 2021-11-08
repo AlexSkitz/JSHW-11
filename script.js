@@ -37,7 +37,6 @@ const actionDec = (id, amount=-1) => ({type: 'ADD', id, amount});
 
 let store = createStore(cartReducer);
 let unsubscribe = store.subscribe(() => console.log(store.getState()));
-
 let unsubscribeTable = store.subscribe(() => {
     let items = 
     `<table id='table'><tbody>${Object.entries(store.getState())
